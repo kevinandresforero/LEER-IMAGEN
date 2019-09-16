@@ -1,3 +1,4 @@
+#crear imagen
 from tkinter import *
 from PIL import Image , ImageDraw , ImageTk
 blanco = (255, 255, 0)
@@ -11,9 +12,11 @@ pintura.line( [10,0,10,100] , fill="black" )
 pintura.line( [10,100,100,100] , fill="black" )
 pintura.rectangle( [110,110,150,150] , fill="black" )
 
+#guardarimagen
 filename = "Prueba.png"
 image1.save(filename)
 
+#mostrar imagen guardada
 pantaya = Tk()
 imagen = Image.open("Prueba.png")
 nuevoancho = 150
